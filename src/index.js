@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 class Square extends React.Component {
   render() {
     return (
-      <button className="square" onClick={function () { alert('click') }}>
+      <button className="square" onClick={() => alert(this.props.name)}>
         {this.props.name}
       </button>
     );
